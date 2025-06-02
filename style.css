@@ -1,0 +1,82 @@
+/* Reset default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  list-style: none;
+  background: inherit;
+}
+
+.nav-menu li {
+  margin: 0 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-menu a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+/* Hero section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  text-align: center;
+}
+
+/* Extra content sections */
+.content {
+  padding: 100px 20px;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+.content:nth-of-type(even) {
+  background-color: #e0f7fa;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+}
